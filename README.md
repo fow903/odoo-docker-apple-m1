@@ -8,4 +8,4 @@
 
 ## Instalar odoo y linkear con la carpeta de addons y con la carpeta de la configuracion
 
-`docker run -d -v /Users/edwdelossantos/projects/odoo/odoo:/etc/odoo -v /Users/edwdelossantos/projects/odoo/extra-addons:/mnt/extra-addons -p 8069:8069 --name odoo --link db:db -t odoo:12`
+`docker run -d -v <ruta de config>:/etc/odoo -v <ruta de modulos>:/mnt/extra-addons -p 8069:8069 --name odoo --link db:db -t odoo:12`
